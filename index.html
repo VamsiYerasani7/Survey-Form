@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Survey Form</title>
+  <h1>Survey Form</h1>
+  <link rel="stylesheet" href="main.css"  />
+</head>
+<body>
+  <div class="form-container">
+    <form id="survey-form" onsubmit="handleSubmit(event)">
+      <div class="form-group">
+        <label for="first-name">First Name</label>
+        <input type="text" id="first-name" required>
+      </div>
+      <div class="form-group">
+        <label for="last-name">Last Name</label>
+        <input type="text" id="last-name" required>
+      </div>
+      <div class="form-group">
+        <label for="dob">Date of Birth</label>
+        <input type="date" id="dob" required>
+      </div>
+      <div class="form-group">
+        <label for="country">Country</label>
+        <select id="country" required>
+          <option value="" disabled selected>Select a country</option>
+          <option value="USA">USA</option>
+          <option value="Canada">Canada</option>
+          <option value="UK">UK</option>
+          <!-- Add more countries as needed -->
+        </select>
+      </div>
+      <div class="form-group">
+        <label>Gender</label><br>
+        <div>
+          <label for="male">Male</label>
+          <input type="checkbox" id="male" value="Male">
+          <label for="female">Female</label>
+          <input type="checkbox" id="female" value="Female">
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="profession">Profession</label>
+        <input type="text" id="profession" required>
+      </div>
+      <div class="form-group">
+        <label for="email">Email</label>
+        <input type="email" id="email" required>
+      </div>
+      <div class="form-group">
+        <label for="mobile-number">Mobile Number</label>
+        <input type="tel" id="mobile-number" required>
+      </div>
+      <div class="button-container">
+        <button type="submit" id="submit-btn">Submit</button>
+        <button type="button" id="reset-btn" onclick="resetForm()">Reset</button>
+      </div>
+    </form>
+  </div>
+
+  <script src="main.js"></script>
+</body>
+</html>
+
